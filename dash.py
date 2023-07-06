@@ -1,13 +1,10 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
-
 
 st.set_page_config(page_title='Dashboard')
 st.title('Welcome to Dashboard')
 st.subheader('import excel file: ')
 excel = st.file_uploader('Chose your file:', type='xlsx')
-
 
 def read(file):
     x = pd.ExcelFile(file)
